@@ -12,8 +12,9 @@ for file in os.listdir(path + '/src-img'):
         continue
 
     already_exists = os.path.exists(
-        '{path}/dest-img/{file}.jpg'.format(path=path,
-                                            file=file_name))
+        '{path}/dest-img/{file}.jpg'
+        .format(path=path,
+                file=file_name))
     if already_exists:
         continue
 
